@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <style>
+        p#js{color: green}
+    </style>
+</head>
+<body>
+<script>
+    function myalert() {
+        var al=alert("我是小丸子")
+        // document.getElementById('js').innerText=al
+    }
+    function myconfirm() {
+         var con=confirm("你是认真的吗？")
+        document.getElementById('js').innerText=con
+
+    }
+    function myprompt() {
+        var neirong = prompt("你确定吗？")
+        var pp=document.getElementById('js')
+        if (neirong!=null){
+            pp.innerText="你点击了确定,它是:"+neirong
+
+        }else{
+           pp.innerText="你点击了取消"
+        }
+    }
+
+</script>
+<input name="alert_" type="button" value="alert" onclick="myalert()"/>
+<input name="confirm_" type="button" value="confirm" onclick="myconfirm()"/>
+<input name="prompt_" type="button" value="prompt" onclick="myprompt()"/>
+<p id="js"></p>
+
+</body>
+</html>

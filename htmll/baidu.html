@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <style>
+        div#head2{
+            margin-top: 20px
+        }
+
+        a.head{
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+            font-family:等线（西文正文）;
+        }
+
+        a.heads{
+            color: black;font-size: 14px
+        }
+
+        a#more {
+            background: dodgerblue;
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        div#dianji{
+            margin-top: 50px
+        }
+        input#baidu{
+            width:500px ;
+            height: 30px;
+
+
+        }
+
+        button#baidu1 {
+            background: dodgerblue;
+            color: white;
+            width: 100px;
+            height: 40px;
+
+        }
+
+        div#scan{
+            margin-top: 100px;
+            margin-bottom: 8px;
+        }
+        div#xiazai{
+            color: black;
+            font-family: 等线（中文正文）;
+        }
+        div#sou{
+            color: grey;
+            font-size: small;
+            margin-top: 5px;
+            font-family: 等线（中文正文）;
+        }
+        a.about{
+            color: grey;
+            font-size: x-small;
+            font-family: 等线（中文正文）;
+        }
+        div#about{
+            margin-top: 30px;
+            font-family: 等线（中文正文）;
+
+        }
+        span#bottom{
+            color: grey;
+            font-size: x-small;
+        }
+
+    </style>
+    <script type="text/javascript" language="JavaScript" src="baidu.js"></script>
+</head>
+<body>
+<div id="head2" align="right">
+    <a  id=a class="head" href="http://news.baidu.com/" onmouseover="myheada()" onmouseout="myheadsa()">新闻</a>&nbsp&nbsp
+    <a id=b class="head" href="https://www.hao123.com/" onmouseover="myheadb()" onmouseout="myheadsb()">hao123</a>&nbsp&nbsp
+    <a id=c class="head" href="https://map.baidu.com/@11585280.82,3555907.48,12z" onmouseover="myheadc()" onmouseout="myheadsc()">地图</a>&nbsp&nbsp
+    <a id=d class="head" href="http://v.baidu.com/" onmouseover="myheadd()" onmouseout="myheadsd()">视频</a>&nbsp&nbsp
+    <a id=e class="head" href="https://tieba.baidu.com/index.html" onmouseover="myheade()" onmouseout="myheadse()">贴吧</a>&nbsp&nbsp
+    <a id=f class="head" href="http://xueshu.baidu.com/" onmouseover="myheadf()" onmouseout="myheadsf()">学术</a>&nbsp&nbsp
+    <a id=g class="heads" href="#" onmouseover="myheadg()" onmouseout="myheadsg()">登录</a>&nbsp&nbsp
+    <a id=h class="heads" href="#" onmouseover="myheadh()" onmouseout="myheadsh()">设置</a>&nbsp&nbsp
+
+    <a id="more" href="#">更多产品</a>
+</div>
+<div id="dianji" align="center">
+    <a href="https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs/" target="_blank">
+        <img src="509.png" title="点击一下，了解更多"></a>
+</div>
+<div align="center">
+    <form action="#" method="post">
+            <input id="baidu" name="sousuo" type="text" value="" onclick="myclick()"/>
+            <button id="baidu1" type="submit" value="百度一下" onmouseover="mymouseover()" onmouseout="myout()" onclick="myclick()">百度一下
+            </button>
+    </form>
+</div>
+<div id="scan" align="center">
+        <img src="47.png"/>
+</div>
+<div id="xiazai" align="center">下&nbsp载&nbsp百&nbsp度&nbspA&nbspP&nbspP
+</div>
+<div id="sou" align="center">有事搜一搜&nbsp没事看一看
+</div>
+<div align="center" id="about">
+    <a class="about" href="#">把百度设为首页</a>&nbsp&nbsp&nbsp
+    <a class="about" href="#">关于百度</a>&nbsp&nbsp&nbsp
+    <a class="about" href="#">About&nbspBaidu</a>&nbsp&nbsp&nbsp
+    <a class="about" href="#">百度推广</a>
+</div>
+<div align="center"  >
+    <span id="bottom">
+        ©2019&nbspBaidu
+        <a class="about" href="#">使用百度前必读</a>&nbsp
+        <a class="about" href="#">意见反馈</a>&nbsp京ICP证030173号
+        <img src="2.png" height="16" width="12">&nbsp&nbsp&nbsp&nbsp
+        <a class="about" href="#">京公网安备11000002000001号</a>
+        <img src="27.png">
+    </span>
+</div>
+</body>
+</html>
